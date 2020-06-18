@@ -1,0 +1,1101 @@
+Package: ansible
+Architecture: all
+Version: 2.5.1+dfsg-1ubuntu0.1
+Priority: optional
+Section: admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Harlan Lieberman-Berg <hlieberman@debian.org>
+Installed-Size: 26268
+Depends: python-cryptography, python-jinja2, python-paramiko, python-pkg-resources, python-yaml, python:any (<< 2.8), python:any (>= 2.7.5-5~), python-crypto, python-httplib2, python-netaddr
+Recommends: python-jmespath, python-kerberos, python-libcloud, python-selinux, python-winrm (>= 0.1.1), python-xmltodict
+Suggests: cowsay, sshpass
+Filename: ./ansible_2.5.1+dfsg-1ubuntu0.1_all.deb
+Size: 3198096
+MD5sum: b855ef040b860f099a7528354ee28415
+SHA1: dd5907c80a0a6e6a2b8fd9541ab8baa2827f7e38
+SHA256: 9e9ce5337e3e5346d9833f6c1810a4aa886ec27980d58c1cf34bd639a44abf9f
+SHA512: ddb91e16a10b2138585b6f983faefcff51bea519420730a68c79f19f465d64e00fff4256a52a8670e1140d517b791eeaf90c68b06160502b73a6517cf6f4f855
+Homepage: https://www.ansible.com
+Description: Configuration management, deployment, and task execution system
+ Ansible is a radically simple model-driven configuration management,
+ multi-node deployment, and remote task execution system. Ansible works
+ over SSH and does not require any software or daemons to be installed
+ on remote nodes. Extension modules can be written in any language and
+ are transferred to managed machines automatically.
+
+Package: ieee-data
+Architecture: all
+Version: 20180204.1
+Priority: optional
+Section: net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Luciano Bello <luciano@debian.org>
+Installed-Size: 9783
+Depends: wget | libwww-perl | curl
+Filename: ./ieee-data_20180204.1_all.deb
+Size: 1538848
+MD5sum: 4601201104fdd56e8fdf4072763ef9ff
+SHA1: 15e5d45bbb561182c4bd4843c83e743db09ded68
+SHA256: 2fed75e5908894a7cb48bc6793eba5641305fade7a28717c308641cdd574f380
+SHA512: 308be38792419c68fd1af4e1f3571f531ea7f74fcce26a038c1d8b12bfcae10366120f2c9c7cc616d4ac6763c3e34487ad23e0c6ae545880d53350702f0237f4
+Homepage: http://standards.ieee.org/regauth/oui/index.shtml
+Description: OUI and IAB listings
+ Provide the Organizationally Unique Identifier (OUI) and Individual Address
+ Block (IAB) listings of identifiers assigned by IEEE Standards Association.
+
+Package: libpython-stdlib
+Architecture: amd64
+Version: 2.7.15~rc1-1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python-defaults
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 37
+Depends: libpython2.7-stdlib (>= 2.7.15~rc1-1~)
+Filename: ./libpython-stdlib_2.7.15~rc1-1_amd64.deb
+Size: 7620
+MD5sum: a91890e37c5c7e2c268882fa48e4aeab
+SHA1: dc4802de1bf8f5a1c336f7ce900c464702b3b983
+SHA256: 2443d968497fb5850a7d2de82f81fcba7b3e61aecc34e61ecacc6f9f80954a6b
+SHA512: 9cadbf780970ea03433aabf344da30f6f9821291cfbb42839b8e1adf185785a29a8403da3792d3ef4b89e5b4a008feb17cc0132e3ac82de2da373b17abc7716b
+Homepage: http://www.python.org/
+Description: interactive high-level object-oriented language (default python version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python version (currently v2.7).
+
+Package: libpython2.7-minimal
+Architecture: amd64
+Version: 2.7.17-1~18.04ubuntu1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 2782
+Recommends: libpython2.7-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Breaks: python2.7-minimal (<< 2.7.4~rc1-1~)
+Replaces: libpython2.7-stdlib (<< 2.7.8-7), python2.7 (<< 2.7.4-2), python2.7-minimal (<< 2.7.3-10)
+Filename: ./libpython2.7-minimal_2.7.17-1~18.04ubuntu1_amd64.deb
+Size: 335096
+MD5sum: d7ecca619ca237b778a668342e7f6912
+SHA1: 4d40e8b19ae7399989e47a413605fb16ae43f75c
+SHA256: 49c2cb633acc725f7b24366ad1f5af2c8e62332eb594439a50cc5ef8c079dee0
+SHA512: c0f5f792e1e5cc0bcc1ca11da457ffeb72039ba87d7f5066ff10ab3901cfa85bd41f13fc95ceee688f5003cd9d6820dd1cb0bea8583b5e7dc36c47579135aa13
+Description: Minimal subset of the Python language (version 2.7)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python2.7-minimal.
+
+Package: libpython2.7-stdlib
+Architecture: amd64
+Version: 2.7.17-1~18.04ubuntu1
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8778
+Provides: python-argparse, python2.7-argparse, python2.7-celementtree, python2.7-cjkcodecs, python2.7-ctypes, python2.7-elementtree, python2.7-profiler, python2.7-wsgiref
+Depends: libpython2.7-minimal (= 2.7.17-1~18.04ubuntu1), libssl1.1 (>= 1.1.1), mime-support, libbz2-1.0, libc6 (>= 2.15), libdb5.3, libexpat1 (>= 2.1~beta3), libffi6 (>= 3.0.4), libncursesw5 (>= 6), libreadline7 (>= 7.0~beta), libsqlite3-0 (>= 3.5.9), libtinfo5 (>= 6)
+Breaks: cython (<< 0.25.2-2build3), python-lxml (<< 3.8.0-2), python-numpy (<< 1:1.12.1-3.1ubuntu1), python-scipy (<< 0.18.1-2ubuntu3), python-tk (<< 2.7.14~rc1-1~), python-urllib3 (<< 1.9.1-3)
+Replaces: libpython2.7-testsuite (<< 2.7.13-4), python2.7 (<< 2.7.5-0~)
+Filename: ./libpython2.7-stdlib_2.7.17-1~18.04ubuntu1_amd64.deb
+Size: 1915016
+MD5sum: 4f36b3529dbf9a185c4670fa30b08786
+SHA1: 9d659f69bb16cf50518d794f7c94346294db1d18
+SHA256: f1fe97c0931256ef7057a13c07956062d81366ebedcd2305e9a107338672a972
+SHA512: f89724606b4d767d685f4bf7397c0b2bad58d5c94a31933b72958cd5b8a779727ff0d784706853639fa9682a0c2a348874d263510cbe1a8f8fc8583a30fac763
+Description: Interactive high-level object-oriented language (standard library, version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 2.7's standard library. It is normally not
+ used on its own, but as a dependency of python2.7.
+
+Package: libyaml-0-2
+Architecture: amd64
+Version: 0.1.7-2ubuntu3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libyaml
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anders Kaseorg <andersk@mit.edu>
+Installed-Size: 137
+Depends: libc6 (>= 2.14)
+Filename: ./libyaml-0-2_0.1.7-2ubuntu3_amd64.deb
+Size: 47190
+MD5sum: fd4e6aa20720399b237bb887fadd0294
+SHA1: d55031bd6cf4d4837d63ec2c953156caf65b85eb
+SHA256: 590a2f084e3ba39fad34fbf45cf118ba7a74df6388d2a15d11dab1f8761d9feb
+SHA512: 564042a31edfb8f275f563600b15bbbc0cab9895071c4204b583eeee54e3ecfbc6d5722e100081e56a5b4b122dfd0e27c2d05dea2c7a977de705777687fdd633
+Homepage: http://pyyaml.org/wiki/LibYAML
+Description: Fast YAML 1.1 parser and emitter library
+ LibYAML is a C library for parsing and emitting data in YAML 1.1, a
+ human-readable data serialization format.
+
+Package: python-asn1crypto
+Architecture: all
+Version: 0.24.0-1
+Priority: optional
+Section: python
+Source: asn1crypto
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Tristan Seligmann <mithrandi@debian.org>
+Installed-Size: 493
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: ./python-asn1crypto_0.24.0-1_all.deb
+Size: 72700
+MD5sum: 5c04a9fb7c4b268ec7e382d754998ed0
+SHA1: 10c3dbcc69ad8a9f34b7e232030f6933999eb60f
+SHA256: da50cdb26a6fde12a8490b946b75a7f70e89b424060fe3ed362cb912a97b3465
+SHA512: fc3792241818cbe7d5f1fb1136f4ecf5d4ea6fe7a539654c5750b134cce1887cd176491c49fb06fdcd6cae769c2b1af7c33d27e9766661ef7b7247a4528ef492
+Homepage: https://github.com/wbond/asn1crypto
+Description: Fast ASN.1 parser and serializer (Python 2)
+ asn1crypto focuses on:
+  - Delayed parsing of byte string values
+  - Persistence of original ASN.1 encoded data until a value is changed
+  - Lazy loading of child fields
+  - Utilization of high-level Python stdlib modules
+ .
+ This package contains the Python 2 version of asn1crypto.
+
+Package: python-certifi
+Architecture: all
+Version: 2018.1.18-2
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sebastien Delafond <seb@debian.org>
+Installed-Size: 309
+Depends: python (<< 2.8), python (>= 2.7), python:any (>= 2.6.6-7~), ca-certificates
+Filename: ./python-certifi_2018.1.18-2_all.deb
+Size: 144096
+MD5sum: a6eff23f8f4fd27cadcb15d1c0e99941
+SHA1: ee6608c379edf15d0b4efbb8b7fc70d12a575798
+SHA256: 55fce161de0ccaf57b4ebfd192ea56ffdeda9100da63154d1141879b01af9efe
+SHA512: c9e767bb39fd0d5e900d9e003c613b5091264e9cd48848cf023568fda9d3f44fd2cdcbe156f092a0169cb7ed95694344e53dbd08712aad60f2c557e568de7587
+Homepage: https://certifi.io/en/latest/
+Description: root certificates for validating SSL certs and verifying TLS hosts
+ Certifi is a carefully curated collection of Root Certificates for
+ validating the trustworthiness of SSL certificates while verifying
+ the identity of TLS hosts. It has been extracted from the Requests
+ project.
+ .
+ The version of certifi in this Debian package is patched to return
+ the location of Debian-provided CA certificates, instead of those
+ packaged by upstream.
+
+Package: python-cffi-backend
+Architecture: amd64
+Version: 1.11.5-1
+Priority: optional
+Section: python
+Source: python-cffi
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 186
+Provides: python-cffi-backend-api-9729, python-cffi-backend-api-max (= 10495), python-cffi-backend-api-min (= 9729)
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7~), libc6 (>= 2.14), libffi6 (>= 3.0.4)
+Breaks: python-cffi (<< 1)
+Replaces: python-cffi (<< 1)
+Filename: ./python-cffi-backend_1.11.5-1_amd64.deb
+Size: 63436
+MD5sum: c9517eca31e41dc2950372f352899bcc
+SHA1: 9fd243f56a867ecd840ee862600583fc936be357
+SHA256: 3c290fb9d2126ba18b5d703f34a806e393d0a51ef9891727732d8929683c4c83
+SHA512: ace3671294dced9cbca0dd5ab5a8d8097f8220f3889e8e162c4dfc632705b8db36369c71e9fb80bcc44f8c13e1b92abfabb451ea02fab0337db29058c590d069
+Homepage: http://cffi.readthedocs.org/
+Description: Foreign Function Interface for Python calling C code - backend
+ Convenient and reliable way of calling C code from Python.
+ .
+ The aim of this project is to provide a convenient and reliable way of calling
+ C code from Python. It keeps Python logic in Python, and minimises the C
+ required. It is able to work at either the C API or ABI level, unlike most
+ other approaches, that only support the ABI level.
+ .
+ This package contains the runtime support for pre-built cffi modules.
+
+Package: python-chardet
+Architecture: all
+Version: 3.0.4-1
+Priority: optional
+Section: python
+Source: chardet
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
+Installed-Size: 410
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-pkg-resources
+Filename: ./python-chardet_3.0.4-1_all.deb
+Size: 80292
+MD5sum: 5294919a0c1a359cb7a0e78716be951e
+SHA1: 0ce3b0af19c9f76996b2454a012c7304497bdad1
+SHA256: 8e71fa093851731252725e15b0d52165530a1244b2f790a016320652ec2e3dc8
+SHA512: 1f2c39e547681292f0c50076ec3146b9f021300a76a0bf7aef275bba18cd51fae11a577a9610df74cd1ac534908165ae2d760dae31d967e313d2f2ab251e4cd3
+Homepage: https://github.com/chardet/chardet
+Description: universal character encoding detector for Python2
+ Chardet takes a sequence of bytes in an unknown character encoding, and
+ attempts to determine the encoding.
+ .
+ Supported encodings:
+  * ASCII, UTF-8, UTF-16 (2 variants), UTF-32 (4 variants)
+  * Big5, GB2312, EUC-TW, HZ-GB-2312, ISO-2022-CN (Traditional and Simplified
+    Chinese)
+  * EUC-JP, SHIFT_JIS, ISO-2022-JP (Japanese)
+  * EUC-KR, ISO-2022-KR (Korean)
+  * KOI8-R, MacCyrillic, IBM855, IBM866, ISO-8859-5, windows-1251 (Cyrillic)
+  * ISO-8859-2, windows-1250 (Hungarian)
+  * ISO-8859-5, windows-1251 (Bulgarian)
+  * windows-1252 (English)
+  * ISO-8859-7, windows-1253 (Greek)
+  * ISO-8859-8, windows-1255 (Visual and Logical Hebrew)
+  * TIS-620 (Thai)
+ .
+ This library is a port of the auto-detection code in Mozilla.
+
+Package: python-crypto
+Architecture: amd64
+Version: 2.6.1-8ubuntu2
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sebastian Ramacher <sramacher@debian.org>
+Installed-Size: 1374
+Provides: python2.7-crypto
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.14), libgmp10
+Suggests: python-crypto-doc
+Filename: ./python-crypto_2.6.1-8ubuntu2_amd64.deb
+Size: 244160
+MD5sum: c710bc4f41e022bbf44d543d1fc400d3
+SHA1: eb47c86fc30f17bfe6f0599f63ed95932eeb4c5b
+SHA256: c40c21f6160c58facc934ff8f26ef5792a6ea5afdc6971a8cc889d438d925a8d
+SHA512: c8e969b92be24928b638087bc6cc054abf5128ea84384abc94e5add3afd9805a01af526f6788db3bc757e56ed6e13c2d066803fd1704afebd2f854ddb3a91913
+Homepage: http://www.pycrypto.org/
+Description: cryptographic algorithms and protocols for Python
+ A collection of cryptographic algorithms and protocols, implemented
+ for use from Python. Among the contents of the package:
+ .
+  * Hash functions: HMAC, MD2, MD4, MD5, RIPEMD160, SHA, SHA256.
+  * Block encryption algorithms: AES, ARC2, Blowfish, CAST, DES, Triple-DES.
+  * Stream encryption algorithms: ARC4, simple XOR.
+  * Public-key algorithms: RSA, DSA, ElGamal.
+  * Protocols: All-or-nothing transforms, chaffing/winnowing.
+  * Miscellaneous: RFC1751 module for converting 128-bit keys
+    into a set of English words, primality testing, random number generation.
+
+Package: python-cryptography
+Architecture: amd64
+Version: 2.1.4-1ubuntu1.3
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Tristan Seligmann <mithrandi@debian.org>
+Installed-Size: 1487
+Depends: python (<< 2.8), python (>= 2.7~), python-asn1crypto, python-cffi-backend-api-min (<= 9729), python-cffi-backend-api-max (>= 9729), python-enum34, python-idna (>= 2.1), python-ipaddress, python-six (>= 1.4.1), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.14), libssl1.1 (>= 1.1.1)
+Suggests: python-cryptography-doc, python-cryptography-vectors
+Breaks: python-openssl (<< 16.0.0)
+Filename: ./python-cryptography_2.1.4-1ubuntu1.3_amd64.deb
+Size: 220940
+MD5sum: d7e3ce1792b87bd3642bb064535189e9
+SHA1: 9213cd4e74e57ecef940bae54922345b8c2d18c4
+SHA256: b5dd93b98fbe65f01df3b652120ec4d56d33399eabd9c6c2fbf77b609a2669d1
+SHA512: c1ff6c37e4178d5fea5c11713c82dfd40f4452c42f1773bb981e97f6328a25e7e1630a5b1c2414125131f26bd2c698acea06b3117a88f271d36260a120bb151a
+Homepage: https://cryptography.io/
+Description: Python library exposing cryptographic recipes and primitives (Python 2)
+ The cryptography library is designed to be a "one-stop-shop" for
+ all your cryptographic needs in Python.
+ .
+ As an alternative to the libraries that came before it, cryptography
+ tries to address some of the issues with those libraries:
+  - Lack of PyPy and Python 3 support.
+  - Lack of maintenance.
+  - Use of poor implementations of algorithms (i.e. ones with known
+    side-channel attacks).
+  - Lack of high level, "Cryptography for humans", APIs.
+  - Absence of algorithms such as AES-GCM.
+  - Poor introspectability, and thus poor testability.
+  - Extremely error prone APIs, and bad defaults.
+ .
+ This package contains the Python 2 version of cryptography.
+
+Package: python-enum34
+Architecture: all
+Version: 1.1.6-2
+Priority: optional
+Section: python
+Source: enum34
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 218
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Suggests: python-enum34-doc
+Breaks: python-enum
+Filename: ./python-enum34_1.1.6-2_all.deb
+Size: 34832
+MD5sum: 46015e7e579831085396975591769821
+SHA1: ea2c352f8de89c6d1d017dea197f38e08449ac5c
+SHA256: 67f09be31b5e1ac8aa77dcd4f5b3e7d97edc0b57b1116d018b6ad3e31dcb824d
+SHA512: 676d0afb51427bb838eb0a6a184f51c06e579449e70371c338ff99d226e37e20c1cb0cfdf0b9e5555f6afc838513ad967194991926f81b0b282fb5c2d1d6daba
+Homepage: https://pypi.python.org/pypi/enum34
+Description: backport of Python 3.4's enum package
+ PEP 435 adds an enumeration to Python 3.4.  This module provides a
+ backport of that data type for older Python versions.  It defines two
+ enumeration classes that can be used to define unit sets of names and
+ values: Enum and IntEnum.
+ .
+ This is the Python 2 compatible package.
+
+Package: python-httplib2
+Architecture: all
+Version: 0.9.2+dfsg-1ubuntu0.1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Andrea Colangelo <warp10@debian.org>
+Installed-Size: 145
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), ca-certificates
+Filename: ./python-httplib2_0.9.2+dfsg-1ubuntu0.1_all.deb
+Size: 34736
+MD5sum: 98c2f86f0df0bd1ab3e15c8f267d0f1c
+SHA1: 63b0d599156e3b785175c6b744c62056019dc9a2
+SHA256: c4734e82cafa5aa5cffae77b1bb3cef7438c61358d1ee516a2cf19309bdf0598
+SHA512: 0046f477a9c499302f7db1814cf751f9d16529b1cc61af53f9aed01662fbf193191c023201d723aaabc2f65542fab16df1da77434de3a7b8fa0c9879f61f47b4
+Homepage: https://github.com/jcgregorio/httplib2
+Description: comprehensive HTTP client library written for Python
+ httplib2.py supports many features left out of other HTTP libraries.
+  * HTTP and HTTPS
+  * Keep-Alive
+  * Authentication
+  * Caching
+  * All Methods
+  * Redirects
+  * Compression
+  * Lost update support
+  * Unit Tested
+ .
+ This package provides module for python2 series.
+
+Package: python-idna
+Architecture: all
+Version: 2.6-1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 269
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: ./python-idna_2.6-1_all.deb
+Size: 32360
+MD5sum: f6403bc3c84f8ab8f8e67a12329b0908
+SHA1: ae68d418ea9d24b7e0f6975ab9e040d81d947d3c
+SHA256: 72b160bc4363c1a8d1318e35fa3e5c7e198fafdfe0f80258a0a1e129466ea9b6
+SHA512: 9131928f86334d6bf1b0c08f6d9569a43c2e7816e6e7bb803050d3aa0d6c66687c6b3baa354eeb63ac6496ddc9027262c6cd6a569d6bcba60a61ca1cda266677
+Homepage: https://github.com/kjd/idna
+Description: Python IDNA2008 (RFC 5891) handling (Python 2)
+ A library to support the Internationalised Domain Names in Applications (IDNA)
+ protocol as specified in RFC 5891. This version of the protocol is often
+ referred to as “IDNA2008” and can produce different results from the earlier
+ standard from 2003.
+ .
+ The library is also intended to act as a suitable drop-in replacement for the
+ “encodings.idna” module that comes with the Python standard library but
+ currently only supports the older 2003 specification.
+ .
+ This package contains the module for Python 2.
+
+Package: python-ipaddress
+Architecture: all
+Version: 1.0.17-1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 101
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: ./python-ipaddress_1.0.17-1_all.deb
+Size: 18182
+MD5sum: abecd8fd88a26c3b6dff0f0ec6f782d1
+SHA1: bb67cdbbedcfb899cefc7037ceb39bd6a6592e45
+SHA256: 0c0f74232e3089c2ce28bbff2b60398713776f40284371ab4c5fba6636be43db
+SHA512: ed63571d73644cff24abe1b293f5bc7bafb382e4ce6cbf2f402a0c0952eb4ffae91d5175058056e9c1455c1b006ba9338f7d605f57ae0c7a79aad5fdc50c144b
+Homepage: https://github.com/phihag/ipaddress
+Description: Backport of Python 3 ipaddress module (Python 2)
+ This module is a backport of the stdlib "ipaddress" module from Python 3. The
+ "ipaddress" module is in turn based off of the "ipaddr" module available in
+ the "python-ipaddr" but there are some important API differences; make sure
+ you are using the right module.
+ .
+ This package contains the Python 2 module.
+
+Package: python-jinja2
+Architecture: all
+Version: 2.10-1ubuntu0.18.04.1
+Priority: optional
+Section: python
+Source: jinja2
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
+Installed-Size: 476
+Depends: python-markupsafe, python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Recommends: python-pkg-resources
+Suggests: python-jinja2-doc
+Enhances: python-pybabel
+Filename: ./python-jinja2_2.10-1ubuntu0.18.04.1_all.deb
+Size: 94780
+MD5sum: bf4c38f00e96bffd888f9ccc1c7f3b2f
+SHA1: ba41e9578e7f60cc73f9db231664a8e06bbf3922
+SHA256: 22ef47b2068353702086f578d4acc71cb87a012f5ed1f508eb657e4e537ff88e
+SHA512: 6975eb4e29656c3a65f4f654dc3e899f242be81d9da45fbfcc36f56c820d1c1e4190997ef9f48fcbc5a1f3a1c7ff761f8b0101312cb0b074dbec7848ca50404f
+Homepage: http://jinja.pocoo.org/
+Description: small but fast and easy to use stand-alone template engine
+ Jinja2 is a template engine written in pure Python. It provides a Django
+ inspired non-XML syntax but supports inline expressions and an optional
+ sandboxed environment.
+ .
+ The key-features are:
+  * Configurable syntax. If you are generating LaTeX or other formats with
+    Jinja2 you can change the delimiters to something that integrates better
+    into the LaTeX markup.
+  * Fast. While performance is not the primarily target of Jinja2 it’s
+    surprisingly fast. The overhead compared to regular Python code was reduced
+    to the very minimum.
+  * Easy to debug. Jinja2 integrates directly into the Python traceback system
+    which allows you to debug Jinja2 templates with regular Python debugging
+    helpers.
+  * Secure. It’s possible to evaluate untrusted template code if the optional
+    sandbox is enabled. This allows Jinja2 to be used as templating language
+    for applications where users may modify the template design.
+
+Package: python-jmespath
+Architecture: all
+Version: 0.9.3-1ubuntu1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 100
+Depends: python (<< 2.8), python (>= 2.7), python:any (>= 2.6.6-7~)
+Filename: ./python-jmespath_0.9.3-1ubuntu1_all.deb
+Size: 21220
+MD5sum: 6c943ea9f2f446c142a4c63ed037fd36
+SHA1: a9de5882f6a77e44e8efd7948d77578ef74e5f9c
+SHA256: 21c4832cc7694dde0450538cede18ef51161c8b6ff37b0ea0462c17499e5ffc8
+SHA512: 74ca049599251c0906c0c29cd5ef889024a536e91981a15714f923c4143f50660249db9dccb8c3c09a6ad3993a6ceecdb69066a2b6d6707d5a094ed2958efec3
+Homepage: https://github.com/boto/jmespath
+Description: JSON Matching Expressions (Python 2)
+ JMESPath is python library which allows you to declaratively specify how
+ to extract elements from a JSON document.
+ .
+ This package contains the module for Python 2.
+
+Package: python-kerberos
+Architecture: amd64
+Version: 1.1.14-1
+Priority: optional
+Section: python
+Source: pykerberos
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Calendarserver Maintainers <calendarserver-maintainers@lists.alioth.debian.org>
+Installed-Size: 64
+Provides: python2.7-kerberos
+Depends: python (<< 2.8), python (>= 2.7), libc6 (>= 2.14), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.14+dfsg), libkrb5-3 (>= 1.6.dfsg.2)
+Filename: ./python-kerberos_1.1.14-1_amd64.deb
+Size: 22496
+MD5sum: 22da606518247005ba3eb683aec3ee19
+SHA1: 8c188cc7d15b6c9ebc43ed6a3fcfc8ff37cd3683
+SHA256: 3a2c26bf357b18c363442b4e5e028443cfa385bdfbc51e25c7dfd11a3e3a2c85
+SHA512: 42aa59623793d6b882b3c6693df5b63169076ad33b0043067fc67b5cebf0140dab2ff9b2ebc252af2e14781a7acca34eda31e20dd6446a6039b58932c562c09f
+Homepage: https://pypi.python.org/pypi/pykerberos
+Description: GSSAPI interface module - Python 2.x
+ This Python package is a high-level wrapper for Kerberos (GSSAPI) operations.
+ The goal is to avoid having to build a module that wraps the entire
+ Kerberos.framework, and instead offer a limited set of functions that do what
+ is needed for client/server Kerberos authentication based on
+ <http://www.ietf.org/rfc/rfc4559.txt>.
+ .
+ Much of the C-code here is adapted from Apache's mod_auth_kerb-5.0rc7.
+ .
+ This package contains the Python 2.x module.
+
+Package: python-libcloud
+Architecture: all
+Version: 2.2.1-1
+Priority: optional
+Section: python
+Source: libcloud
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 14603
+Depends: python-requests, python:any (<< 2.8), python:any (>= 2.7.5-5~), python-crypto (>= 2.6), python-lockfile (>= 0.9), python-simplejson
+Filename: ./python-libcloud_2.2.1-1_all.deb
+Size: 1234836
+MD5sum: 657925b7721eacedc0f28ddc9be61c49
+SHA1: 34ea5ebe2ff9be67aefb2cb2dd2e5fb41c8deab2
+SHA256: 86b103775b05e3fba3e96287a9e430fd921178a3959e5fe4a3c6359ecd18821a
+SHA512: d61d35d1bd54ae18972ba3517c11ca39148d23b9e61e786e4f49f83373f0f6e25563ad14612aea65f22087d8eec4f449100dc80a6d2e292fc3be2cf666968473
+Homepage: https://libcloud.apache.org/
+Description: unified Python interface into the cloud
+ libcloud is a pure Python client library for interacting with many of the
+ popular cloud server providers using a unified API. It was created to make it
+ easy for developers to build products that work between any of the services
+ that it supports.
+ .
+  * Avoid vendor lock-in
+  * Use the same API to talk to many different providers
+  * More than 30 supported providers total
+  * Four main APIs: Compute, Storage, Load Balancers, DNS
+  * Supports Python 2.5, Python 2.6, Python 2.7, PyPy and Python 3
+ .
+ Resource you can manage with Libcloud are divided in the following categories:
+ .
+  * Cloud Servers and Block Storage - services such as Amazon EC2 and
+    Rackspace Cloud Servers (libcloud.compute.*)
+  * Cloud Object Storage and CDN - services such as Amazon S3 and
+    Rackspace CloudFiles (libcloud.storage.*)
+  * Load Balancers as a Service, LBaaS (libcloud.loadbalancer.*)
+  * DNS as a Service, DNSaaS (libcloud.dns.*)
+ .
+ libcloud was originally created by the folks over at Cloudkick, but has
+ since grown into an independent free software project licensed under
+ the Apache License (2.0).
+
+Package: python-lockfile
+Architecture: all
+Version: 1:0.12.2-2
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ben Finney <bignose@debian.org>
+Installed-Size: 64
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Suggests: python-lockfile-doc
+Filename: ./python-lockfile_1%3a0.12.2-2_all.deb
+Size: 14592
+MD5sum: 3eb8aaba74ab6d2b609e2a202ddcdc46
+SHA1: 858746d909b40fe2e2936f92594334db4e1c4d3e
+SHA256: 5e2fe468893192e858c4c1d55acc537755f9b4e6f2e653f34a8e0ea956a44852
+SHA512: d2f6f8c8ee65c3da1871a0c4aec8097a654dd2179856c0b2a87b3c764dcd990d1c62e7946139115f548f1956d2d9adf9330befc67c93c59d55f588528be2cbf4
+Homepage: https://pypi.python.org/pypi/lockfile/
+Description: file locking library for Python — Python 2 library
+ The ‘lockfile’ library exports a ‘LockFile’ class which provides a
+ simple API for locking files.
+ .
+ The appropriate implementation for ‘LockFile’ is chosen automatically
+ based on the OS capabilities for an atomic filesystem operation.
+ These implementations are also available for explicit use as
+ ‘LinkLockFile’ and ‘MkdirLockFile’.
+ .
+ Other back ends are possible with the same semantics. Examples
+ included are:
+  * ‘SQLiteLockFile’, using records in an SQLite database.
+  * ‘PIDLockFile’, using the semantics of a Unix PID file.
+ .
+ Unlike other Python locking libraries (the Windows ‘msvcrt.locking’
+ function, the Unix ‘fcntl.flock’, ‘fcntl.lockf’, and the deprecated
+ ‘posixfile’ module), the API is identical across both Unix (including
+ GNU/Linux and MacOS) and Windows platforms.
+ .
+ This package installs the Python 2 library.
+
+Package: python-markupsafe
+Architecture: amd64
+Version: 1.0-1build1
+Priority: optional
+Section: python
+Source: markupsafe
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Piotr Ożarowski <piotr@debian.org>
+Installed-Size: 55
+Provides: python2.7-markupsafe
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.14)
+Filename: ./python-markupsafe_1.0-1build1_amd64.deb
+Size: 13040
+MD5sum: fba173b9c1967b7b578a3bdeac63e3fe
+SHA1: 96c57324da46087961c8234ad97918fecf6c62db
+SHA256: 58cd1a38824a76e5e3176f1a794bc6d593fe73a4ec9a867b811870fd1870fd60
+SHA512: 3346f0224032cd22dde8baf422180af098a0023b51e8b5e87f7082ba5e58b0c46e9ca1ff36d8d7bbcda71aa0c58ee4153b2387ad7ab00585aa5d447a9b91bd49
+Homepage: https://pypi.python.org/pypi/MarkupSafe
+Description: HTML/XHTML/XML string library for Python
+ MarkupSafe is a Python library implementing a unicode subclass that is
+ aware of HTML escaping rules. It can be used to implement automatic
+ string escaping.
+
+Package: python-minimal
+Architecture: amd64
+Version: 2.7.15~rc1-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python-defaults
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 145
+Depends: python2.7-minimal (>= 2.7.15~rc1-1~), dpkg (>= 1.13.20)
+Recommends: python
+Conflicts: python-central (<< 0.5.5)
+Breaks: idle (<< 2.6), python (<= 2.7.3-1~), python-all (<< 2.6), python-all-dbg (<< 2.6), python-all-dev (<< 2.6), python-dbg (<< 2.6), python-dev (<< 2.6), python-examples (<< 2.6), python-support (<< 1.0.10ubuntu2), python2.5-minimal (<< 2.5.5-7), python2.6-minimal (<< 2.6.5~rc2-2), python3.1-minimal (<< 3.1.2~rc1-2)
+Replaces: python (<= 2.7.3-1~)
+Filename: ./python-minimal_2.7.15~rc1-1_amd64.deb
+Size: 28068
+MD5sum: aab12c847956500ef798ac63f760ac15
+SHA1: 1c184af7112febb5ddb5b6164875d34087685892
+SHA256: 960ba1bf3601f763f2d9b26773ce91840facb16f141197ef462a98a5e86bbd07
+SHA512: 59fb3fcadbe700ae6aa8926436645b9f2364d59f99bceeca499fd9ddda3d2c424489b8acd1e867bab6d6640536b912fac7eaf5afc54526e8f83e00c1e0b37238
+Homepage: http://www.python.org/
+Description: minimal subset of the Python language (default version)
+ This package contains the interpreter and some essential modules.  It's used
+ in the boot process for some basic tasks.
+ See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
+ contained in this package.
+
+Package: python-netaddr
+Architecture: all
+Version: 0.7.19-1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Vincent Bernat <bernat@debian.org>
+Installed-Size: 979
+Depends: ieee-data, python (<< 2.8), python (>= 2.7), python:any (>= 2.6.6-7~)
+Suggests: ipython, python-netaddr-docs
+Filename: ./python-netaddr_0.7.19-1_all.deb
+Size: 213348
+MD5sum: 252e60f6ddfb9fe3ede20b0d67ba642f
+SHA1: 26e0e65f1623a231a6ad15df02485e474ece7772
+SHA256: d39b3711181a9539100d23279a8cd5c8180ac1ce909b3b1caab0ddc273a61943
+SHA512: 9556c9e3890bdc7f4b6124ecef2186d432cbf1868b18b71ffdde66acbf62b371f7a3d5232818a324f64930f7cadbe5f82f37ec629f26d2fff717c71e6dace5df
+Homepage: https://github.com/drkjam/netaddr/
+Description: manipulation of various common network address notations (Python 2)
+ netaddr is a Python library for the manipulation of various common
+ network address notations and representations.
+ .
+ It takes the hassle out of fiddling with enumerable variations of
+ network addresses presenting a consistent, extensible, easy-to-use
+ and (above all) Pythonic API.
+ .
+ With it you can validate, convert, categorise, iterate, generate,
+ slice (and dice):
+  - MAC (Media Access Control)
+  - IEEE EUI-48 and EUI-64
+  - IP version 4
+  - IP version 6
+  - CIDR (Classless Inter-Domain Routing)
+ .
+ This is the Python 2 version of the package.
+
+Package: python-openssl
+Architecture: all
+Version: 17.5.0-1ubuntu1
+Priority: optional
+Section: python
+Source: pyopenssl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sandro Tosi <morph@debian.org>
+Installed-Size: 224
+Depends: python-cryptography (>= 2.1.4), python-six (>= 1.5.2), python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Suggests: python-openssl-doc, python-openssl-dbg
+Filename: ./python-openssl_17.5.0-1ubuntu1_all.deb
+Size: 41332
+MD5sum: 641f9d11b00809d0557f09c86a4be1c7
+SHA1: da3c9c660c47ad96582ad3cc81971a7f7f702a9e
+SHA256: 1a3b04c4ac955981790d54021edb0a7d26c653f24c5a1ff2450b7b34bcc578fe
+SHA512: 7080bc0755cc531edca14aa84c15e752fdced009cfbd15e01405beb8ec881bd256f61bcda193e33b445a2c848d53671c8bd98e927c5ad01569f801fa6861e3f8
+Homepage: https://pyopenssl.org/
+Description: Python 2 wrapper around the OpenSSL library
+ High-level wrapper around a subset of the OpenSSL library, includes
+ .
+   * SSL.Connection objects, wrapping the methods of Python's portable
+     sockets
+   * Callbacks written in Python
+   * Extensive error-handling mechanism, mirroring OpenSSL's error
+     codes
+ .
+ A lot of the object methods do nothing more than calling a
+ corresponding function in the OpenSSL library.
+
+Package: python-paramiko
+Architecture: all
+Version: 2.0.0-1ubuntu1.2
+Priority: optional
+Section: python
+Source: paramiko
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jeremy T. Bouse <jbouse@debian.org>
+Installed-Size: 630
+Provides: python2.7-paramiko
+Depends: python-cryptography (>= 1.1), python-pyasn1 (>= 0.1.7), python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Suggests: python-gssapi (>= 0.6.1)
+Filename: ./python-paramiko_2.0.0-1ubuntu1.2_all.deb
+Size: 110260
+MD5sum: 3174373cf6660faef9cc57579a68ab0b
+SHA1: 7a8810cade799c78d58d616d852d9924953f70f3
+SHA256: 8b26a1cd74285d11d108f97f2d8f7c6c833ae3e754c246480c3b308d1b58cb19
+SHA512: cd0e49d0845eba5fd794b0781509ee5022d2d35da8779137396166c1097bb64dbe1228b26287585491e84db3e739df10a7e0703c7aeaabac1749cef8ff82e528
+Homepage: https://github.com/paramiko/paramiko/
+Description: Make ssh v2 connections (Python 2)
+ This is a library for making SSH2 connections (client or server).
+ Emphasis is on using SSH2 as an alternative to SSL for making secure
+ connections between Python scripts.  All major ciphers and hash methods
+ are supported.  SFTP client and server mode are both supported too.
+ .
+ This is the Python 2 version of the package.
+
+Package: python-pkg-resources
+Architecture: all
+Version: 39.0.1-2
+Multi-Arch: foreign
+Priority: optional
+Section: python
+Source: python-setuptools
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 545
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Suggests: python-setuptools
+Filename: ./python-pkg-resources_39.0.1-2_all.deb
+Size: 127896
+MD5sum: 4416a1b623b5cda3d18f1f5d707ed593
+SHA1: 7128cdba89a8f392ebf57c877d3c526c2a87699e
+SHA256: e10532c25dcccadaafe2d4f3778255fd407d059c234246fe5136ec522bf8288d
+SHA512: fb2b51367b367f4a696ec8d5627aee2c1a16768e16953ab1ea5a7e95e218bab7610706e30448aefb25c81c51510e6458345ec5f980c196f194a1ba220f72cd47
+Homepage: https://pypi.python.org/pypi/setuptools
+Description: Package Discovery and Resource Access using pkg_resources
+ The pkg_resources module provides an API for Python libraries to
+ access their resource files, and for extensible applications and
+ frameworks to automatically discover plugins.  It also provides
+ runtime support for using C extensions that are inside zipfile-format
+ eggs, support for merging packages that have separately-distributed
+ modules or subpackages, and APIs for managing Python's current
+ "working set" of active packages.
+
+Package: python-pyasn1
+Architecture: all
+Version: 0.4.2-3
+Priority: optional
+Section: python
+Source: pyasn1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jan Lübbe <jluebbe@debian.org>
+Installed-Size: 358
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Breaks: python-pysnmp4 (<< 4.3.4)
+Filename: ./python-pyasn1_0.4.2-3_all.deb
+Size: 46732
+MD5sum: 7de54a76fc349f6a90bcccdccca731c9
+SHA1: 660b0d15a9cca4b449c3c6ecb364739fd59dd9f7
+SHA256: f61f4b4644144307ded2f101e00c84bf800ba8ba58eee992c7632904c5bd42f6
+SHA512: b3de51bbbdccc10cd42e11403a999254eeed3acfde27b963b06dca06bf4533539e450e5c49ff325e51db12318b21ffee5dff9d0f1468cfde0337c484e40a6a95
+Homepage: http://pyasn1.sourceforge.net/
+Description: ASN.1 library for Python (Python 2 module)
+ This  is  an implementation  of  ASN.1  types  and codecs  in  Python
+ programming language. It has been first written to support particular
+ protocol (SNMP) but then generalized  to be suitable for a wide range
+ of protocols based on ASN.1 specification.
+ .
+ This package contains the Python 2 module.
+
+Package: python-requests
+Architecture: all
+Version: 2.18.4-2ubuntu0.1
+Priority: optional
+Section: python
+Source: requests
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 279
+Depends: python-certifi, python-chardet (>= 3.0.2), python-idna, python-urllib3 (>= 1.21.1), python:any (<< 2.8), python:any (>= 2.7.5-5~), ca-certificates, python-chardet (<< 3.1.0), python-urllib3 (<< 1.23)
+Suggests: python-cryptography, python-idna (>= 2.5), python-openssl, python-socks
+Breaks: httpie (<< 0.9.2)
+Filename: ./python-requests_2.18.4-2ubuntu0.1_all.deb
+Size: 58496
+MD5sum: e3e465e6e9bcffb23d6c9d9f7321e900
+SHA1: e7997197245a718a3161451f9d667abdf1b4d844
+SHA256: 7c4940969aec14ce530b8927478dd14044eb1f7ee09ac94c2afd8061cf56a791
+SHA512: bbb03feab57f5d84bb30c270725cf689e705bc5ca813f7c74e211f82adb6ca2bd738aeeebdc57c4d3090313bb23ecf7f1cfe169688ad8ee5110381b27cc1b7df
+Homepage: http://python-requests.org
+Description: elegant and simple HTTP library for Python2, built for human beings
+ Requests allow you to send HTTP/1.1 requests. You can add headers, form data,
+ multipart files, and parameters with simple Python dictionaries, and access
+ the response data in the same way. It's powered by httplib and urllib3, but
+ it does all the hard work and crazy hacks for you.
+ .
+ Features
+ .
+   - International Domains and URLs
+   - Keep-Alive & Connection Pooling
+   - Sessions with Cookie Persistence
+   - Browser-style SSL Verification
+   - Basic/Digest Authentication
+   - Elegant Key/Value Cookies
+   - Automatic Decompression
+   - Unicode Response Bodies
+   - Multipart File Uploads
+   - Connection Timeouts
+
+Package: python-selinux
+Architecture: amd64
+Version: 2.7-2build2
+Built-Using: libsepol (= 2.7-1)
+Priority: optional
+Section: python
+Source: libselinux
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
+Installed-Size: 558
+Provides: python2.7-selinux
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.14), libselinux1 (>= 2.7~rc2)
+Filename: ./python-selinux_2.7-2build2_amd64.deb
+Size: 138400
+MD5sum: 14d83d736e770db2e08b7525a5600771
+SHA1: 65f5f51aa1fbb9d440e54431d7bb567409f639d6
+SHA256: 6305e08f330a7b369b7c44d7f458b2c6a0d7234d905b8edeb57ad0c43633503a
+SHA512: 107df08326959f333fbc37433c48e23d27cfd9f34e85a3711917755ca6dda3b60371153039ad338573961ef621ee59d4315a079504497f748d334b4aab6b660b
+Homepage: http://userspace.selinuxproject.org/
+Description: Python bindings to SELinux shared libraries
+ This package provides the Python bindings needed for developing Python
+ SELinux applications.
+ .
+ Security-enhanced Linux is a patch of the Linux kernel and a number
+ of utilities with enhanced security functionality designed to add mandatory
+ access controls to Linux. The Security-enhanced Linux kernel contains
+ new architectural components originally developed to improve the security
+ of the Flask operating system. These architectural components provide
+ general support for the enforcement of many kinds of mandatory access
+ control policies, including those based on the concepts of Type Enforcement,
+ Role-based Access Control, and Multi-level Security.
+
+Package: python-simplejson
+Architecture: amd64
+Version: 3.13.2-1
+Priority: optional
+Section: python
+Source: simplejson
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 248
+Provides: python2.7-simplejson
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.4)
+Filename: ./python-simplejson_3.13.2-1_amd64.deb
+Size: 61156
+MD5sum: 9d98c66b3542bdb14f671b7cfd1b9862
+SHA1: b723fa90984ab0e4c1a7e4b4e861f3edf55db994
+SHA256: 24e216b8248d799cd4fa29e71ee8e6abf353efc8b9f44196ed2b30425574d148
+SHA512: 72e24f82a1f580e958078aececf98552616ca4d722b51db3ed8c116890d51df41c8aaa59a7ca22dff215142564145b37262d86546096b6036390d54f3a3f09e7
+Homepage: https://simplejson.readthedocs.io/
+Description: simple, fast, extensible JSON encoder/decoder for Python 2.x
+ simplejson is a simple, fast, complete, correct and extensible JSON
+ <http://json.org> encoder and decoder.
+ .
+ The encoder may be subclassed to provide serialization in any kind of
+ situation, without any special support by the objects to be serialized
+ (somewhat like pickle).
+ .
+ The decoder can handle incoming JSON strings of any specified encoding
+ (UTF-8 by default).
+ .
+ simplejson is the externally maintained development version of the json
+ library included with Python 2.6 and Python 3.0, but maintains backwards
+ compatibility with Python 2.5.
+ .
+ This package contains the Python 2.x module.
+
+Package: python-six
+Architecture: all
+Version: 1.11.0-2
+Multi-Arch: foreign
+Priority: optional
+Section: python
+Source: six
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 54
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: ./python-six_1.11.0-2_all.deb
+Size: 11288
+MD5sum: a2949c891508834628a123d1813a38d0
+SHA1: 078e0adb28f53bab5cdb5568cd21d5f1b5eb2a72
+SHA256: ff9e29376ae796b4108ca7f2aa26698a049db6f48c26ae0b8c95b56be3ee931e
+SHA512: eb6988dae10654a3769d8711db52253d8e6b7d326325d84928c0b9f9142ebb49fc9512e996a731156130ab352ad87e82e9462937bfb385f9b3e3a4b8c99b7aa1
+Homepage: https://pypi.python.org/pypi/six
+Description: Python 2 and 3 compatibility library (Python 2 interface)
+ Six is a Python 2 and 3 compatibility library. It provides utility
+ functions for smoothing over the differences between the Python versions
+ with the goal of writing Python code that is compatible on both Python
+ versions.
+ .
+ This package provides Six on the Python 2 module path. It is complemented
+ by python3-six and pypy-six.
+
+Package: python-urllib3
+Architecture: all
+Version: 1.22-1ubuntu0.18.04.1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 401
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~), python-six
+Recommends: ca-certificates, python-cryptography, python-idna, python-ipaddress, python-openssl
+Suggests: python-ntlm, python-socks
+Filename: ./python-urllib3_1.22-1ubuntu0.18.04.1_all.deb
+Size: 85892
+MD5sum: 75faee51b7355a8cfab5638ab789ec8c
+SHA1: 402612e8f9137c5b6cb228a1fbd34fdff68b7f4a
+SHA256: cc12d6c983b69b191994e51500e17bf86bf0a06e0a04b65eed175739fccf550f
+SHA512: 13291f0a63313c1ceedbbcadad62780ccd59d1cf11de3a6eaa16cd724998da988be6359c97038cb16d98685c0e5c6ca07caf5cdc490554d7980908417bf4e113
+Homepage: http://urllib3.readthedocs.org
+Description: HTTP library with thread-safe connection pooling for Python
+ urllib3 supports features left out of urllib and urllib2 libraries.
+ .
+   - Re-use the same socket connection for multiple requests (HTTPConnectionPool
+     and HTTPSConnectionPool) (with optional client-side certificate
+     verification).
+   - File posting (encode_multipart_formdata).
+   - Built-in redirection and retries (optional).
+   - Supports gzip and deflate decoding.
+   - Thread-safe and sanity-safe.
+   - Small and easy to understand codebase perfect for extending and
+     building upon.
+
+Package: python-xmltodict
+Architecture: all
+Version: 0.11.0-1
+Priority: optional
+Section: python
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sebastien Badia <sbadia@debian.org>
+Installed-Size: 39
+Depends: python:any (<< 2.8), python:any (>= 2.7.5-5~)
+Filename: ./python-xmltodict_0.11.0-1_all.deb
+Size: 10336
+MD5sum: a51f86bd965db02a64097b108833378d
+SHA1: 1866f8f3ea78633ab3bccf98c80ab9e11b7f5ef3
+SHA256: 64657acd481a456267f97f313a940c5dbe8bdbdcbb002571c91a5e3e566a04c2
+SHA512: cc23f499cdb736653d9ef09c4d113122bc66511e0cf6fe47f35296c11a70a79ff1ed2a5cdf36ef57a685dc0f360f1c92f25ed90a22bb5ced7f0e91aad6f956e6
+Homepage: https://github.com/martinblech/xmltodict
+Description: Makes working with XML feel like you are working with JSON (Python 2)
+ xmltodict is a Python module that makes working with XML feel like you are
+ working with JSON. xmltodict is very fast (Expat-based) and has a streaming
+ mode with a small memory footprint, suitable for big XML dumps.
+ .
+ This package provides the Python 2 version of the library.
+
+Package: python-yaml
+Architecture: amd64
+Version: 3.12-1build2
+Priority: optional
+Section: python
+Source: pyyaml
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Installed-Size: 468
+Depends: python (<< 2.8), python (>= 2.7~), python:any (<< 2.8), python:any (>= 2.7.5-5~), libc6 (>= 2.14), libyaml-0-2
+Filename: ./python-yaml_3.12-1build2_amd64.deb
+Size: 115300
+MD5sum: 13f3e69076afed4f5028dfd3ccc55713
+SHA1: 508d84e14582786fd8dc95fd3ebe21ef3fcdcf93
+SHA256: 6d7224b64bad33e42a21cad92c2381f480785fdce00d8df8ecd0411f7570ae06
+SHA512: 1f4ad7e8755122a1e478ebe141aedfab73eee71c4a98476b484ba65b1ba397f09d2a4454258c1142d062241e656f79538d28c2949d87c050a1471dec98d2e5d5
+Homepage: https://github.com/yaml/pyyaml
+Description: YAML parser and emitter for Python
+ Python-yaml is a complete YAML 1.1 parser and emitter for Python.  It can parse
+ all examples from the specification. The parsing algorithm is simple enough to
+ be a reference for YAML parser implementors. A simple extension API is also
+ provided.  The package is built using libyaml for improved speed.
+
+Package: python2.7-minimal
+Architecture: amd64
+Version: 2.7.17-1~18.04ubuntu1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 3685
+Pre-Depends: libc6 (>= 2.15), zlib1g (>= 1:1.2.0)
+Depends: libpython2.7-minimal (= 2.7.17-1~18.04ubuntu1)
+Recommends: python2.7
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Replaces: python2.7 (<< 2.7.8-7~)
+Filename: ./python2.7-minimal_2.7.17-1~18.04ubuntu1_amd64.deb
+Size: 1294028
+MD5sum: f02ada61b4a3987a1cde0aa439536018
+SHA1: f345736e53c9c76ad0e60d3a136dee5f5a147a87
+SHA256: 1f8f1bf97632c63117ec8cb4124cd9e0792b6dcfaf13106fb4d8525540d06fd4
+SHA512: 966f6144633c2c39a5859894d2cc4c169bad5975d613bbec36f488a28d64f2a7b3071d5cd200e5e00d094c553c683fd91ee7fb0ac2f3d771aed0d7c547f010a7
+Description: Minimal subset of the Python language (version 2.7)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
+ contained in this package.
+
+Package: python2.7
+Architecture: amd64
+Version: 2.7.17-1~18.04ubuntu1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 382
+Depends: python2.7-minimal (= 2.7.17-1~18.04ubuntu1), libpython2.7-stdlib (= 2.7.17-1~18.04ubuntu1), mime-support
+Suggests: python2.7-doc, binutils
+Conflicts: python-profiler (<= 2.7.1-2)
+Breaks: python-virtualenv (<< 1.7.1.2-2~), vim-athena (<< 2:7.3.547-4), vim-gnome (<< 2:7.3.547-4), vim-gtk (<< 2:7.3.547-4), vim-nox (<< 2:7.3.547-4)
+Replaces: python-profiler (<= 2.7.1-2), python2.7-minimal (<< 2.7.3-7~)
+Filename: ./python2.7_2.7.17-1~18.04ubuntu1_amd64.deb
+Size: 247752
+MD5sum: 541eec3c83c60ac27fd0a207bca7901b
+SHA1: f561de86d98a237a69d56ec203dfcf2962cea6f0
+SHA256: 2573064db649abfe58fcbd867f82acd21aa82314077b374092a56fdf13d03a5a
+SHA512: d31814b072b3de685b5f609b3e870dfe86337d20d341f28e528c7fee976f695d6dd56c39ff3b7ac99d86246ffba87259bd76d744fd1b2ec88266870a622b8d66
+Description: Interactive high-level object-oriented language (version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+
+Package: python
+Architecture: amd64
+Version: 2.7.15~rc1-1
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python-defaults
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 624
+Provides: python-ctypes, python-email, python-importlib, python-profiler, python-wsgiref
+Pre-Depends: python-minimal (= 2.7.15~rc1-1)
+Depends: python2.7 (>= 2.7.15~rc1-1~), libpython-stdlib (= 2.7.15~rc1-1)
+Suggests: python-doc (= 2.7.15~rc1-1), python-tk (>= 2.7.15~rc1-1~)
+Conflicts: python-central (<< 0.5.5)
+Breaks: update-manager-core (<< 0.200.5-2)
+Replaces: python-dev (<< 2.6.5-2)
+Filename: ./python_2.7.15~rc1-1_amd64.deb
+Size: 139968
+MD5sum: a1a78eb8ba15cbb31d13be407f7b5f20
+SHA1: a036e5b1d73383e892fa5526fe58b3932e922743
+SHA256: 9be87952c519f94d24129911e03a24035ce47358cb528492f4a53b2e31efc6d4
+SHA512: 89ad0fc64b051cc7d27cc09d3ac5a156a98bb077e2257e47f9a6deaa3955f9b6c36e5c1c6e694d8777f6f0e2c754046652bab63062d82fbff45a163d28b7e6e3
+Homepage: http://www.python.org/
+Description: interactive high-level object-oriented language (default version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python version (currently v2.7).
+Cnf-Extra-Commands: python
+Cnf-Priority-Bonus: 3
+

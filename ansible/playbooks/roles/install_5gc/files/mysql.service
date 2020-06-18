@@ -1,0 +1,16 @@
+[Unit]
+Description=Mysql
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+User=mysql
+Group=mysql
+Type=forking
+PIDFile=/usr/local/mysql/mysql.pid
+ExecStart=/usr/local/mysql/support-files/mysql.server start
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=false
+
+[Install]
+WantedBy=multi-user.target

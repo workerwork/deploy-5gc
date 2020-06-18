@@ -1,0 +1,48 @@
+# Copyright 2019 baicells Authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+- name: Check System
+  tags: "check-system" 
+  ignore_errors: false
+  fail:
+    msg: "Conditions::
+          architecture:{{system.architecture}} 
+          distribution:{{system.distribution}}
+          release:{{system.release}}
+          version:{{system.version}}"
+  when:
+  - ansible_architecture != (system.architecture) or 
+    ansible_distribution != (system.distribution) or 
+    ansible_distribution_release != (system.release) or 
+    ansible_distribution_version != (system.version)
+
+- name: Install JDK
+  tags: "install-jdk"
+  block:
+  - include: install_jdk.yaml
+
+- name: Install Redis
+  tags: "install-redis"
+  block:
+  - include: install_redis.yaml
+
+- name: Install Mysql
+  tags: "install-mysql"
+  block:
+  - include: install_mysql.yaml
+
+    #- name: Install Tomcat
+    #  tags: "install-tomcat"
+    #  block:
+    #  - include: install_tomcat.yaml
